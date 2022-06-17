@@ -20,6 +20,7 @@
     .containerSuperiores{
         display: flex;
         flex-direction: column;
+        background-color: black;
     }
     .flexSection{
         display: flex;
