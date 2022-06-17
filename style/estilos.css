@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*mobile
+480 a 768 px
+*/
+
+.nav2{
+    background: url(../img/descarga.jfif) center center; 
+    background-size: cover;
+}
+@media (min-width:480px)  {
+    .containerMujeres{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteinerPantalones{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerSuperiores{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .grillaBody{
+        display: grid;
+        grid-template-areas:    
+            "header"
+            "main" 
+            "footer"
+        ;
+        grid-template-rows: 400px 2fr 400px;
+        grid-template-columns: 100%;
+       grid-row-gap: 10px;
+        
+    }  
+    .headerGrillaM{
+        
+        display: grid;
+        grid-template-areas: 
+        "nav" 
+        "nuevo";
+        grid-template-rows: 100px 250px;
+        grid-template-columns: 100%;
+            
+    }
+    .grillaBody{
+    
+        display: grid;
+        grid-template-areas:    
+            "header"
+            "main"
+            "footer" 
+        ;
+        grid-template-rows: 350px 2fr 400px;
+        grid-template-columns:  100%;
+        
+    }
+    header{
+        grid-area: header;  
+    }
+    .headerGrilla{
+    
+        display: grid;
+        grid-template-areas: 
+            "nav" 
+            "destacados";
+            grid-template-rows: 100px 250px;
+            grid-template-columns: 100%;
+    
+    }
+    .nav{
+        background: url(../img/imgFondo.jpg) center center; 
+        background-size: cover;
+        grid-area: nav;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .destacados{
+        grid-area: destacados;
+        background: url(../img/imgDestacado.jpg) center center; 
+        background-size: cover;
+    
+    }
+    main{
+        padding: 10px;
+        grid-area: main; 
+        background: url(../img/imgFondoBody.jpg); 
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+    }
+    footer{
+        grid-area: footer;
+    }
+    .footerGrids{
+        display: grid;
+        grid-template-areas: 
+        "redesF"
+        "tips";
+        grid-row: 100px 300px;
+        grid-template-columns: 100%;
+    }
+    .redesF{
+        grid-area: redesF;
+        background: url(../img/fondoRedes.jpg) center center; 
+        background-size: cover;
+    }
+    .tips{
+        display: flex;
+        grid-area: tips;
+        background: url(../img/fondoVideo.jpg) center center; 
+        background-size: cover;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nuevo{
+        background: url(../img/fashion.jpg) center center; 
+        background-size: cover;
+    }
+} 
+@media (min-width: 768px){
+    .containerMujeres{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteinerPantalones{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerSuperiores{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexSection{
+        display: flex;
+        justify-content: space-around;
+    }
+    .grillaBody{
+        display: grid;
+        grid-template-areas:    
+            "header"
+            "main" 
+            "footer"
+        ;
+        grid-template-rows: 400px 2fr 400px;
+        grid-template-columns: 100%;
+       grid-row-gap: 10px;
+        
+    }
+    .headerGrilla{
+        
+        display: grid;
+        grid-template-areas: 
+            "nav destacados";
+            grid-template-rows: 400px;
+            grid-template-columns: 2fr 1fr;
+            
+    }
+    .headerGrillaM{
+        
+        display: grid;
+        grid-template-areas: 
+            "nav nuevo";
+            grid-template-rows: 400px;
+            grid-template-columns: 2fr 1fr;
+            
+    }
+    .grillaBody{
+    
+        display: grid;
+        grid-template-areas:      
+            "header" 
+            "main"
+            "footer" 
+        ;
+        grid-template-rows: 350px 2fr 400px;
+        grid-template-columns: 100%;
+       grid-row-gap: 10px;
+        
+    }  
+    main{
+        padding: 10px;
+        grid-area: main; 
+        background: url(../img/imgFondoBody.jpg) center center; 
+        background-size: cover;
+    }
+    .flexSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .nuevo{
+        background: url(../img/fashion.jpg) center center; 
+        background-size: cover;
+    }
+}
+@media  (min-width: 1024px){
+    .containerMujeres{
+        display: flex;
+        flex-direction: row;
+    }
+    .conteinerPantalones{
+        display: flex;
+        flex-direction: row;
+    }
+    .containerSuperiores{
+        display: flex;
+        flex-direction: row;
+    }
+    .flexSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .grillaBody{
+        display: grid;
+        grid-template-areas:    
+            "header"
+            "main" 
+            "footer"
+        ;
+        grid-template-rows: 400px 2fr 400px;
+        grid-template-columns: 100%;
+       grid-row-gap: 10px;
+        
+    }
+    .headerGrilla{
+        
+        display: grid;
+        grid-template-areas: 
+            "nav destacados";
+            grid-template-rows: 400px;
+            grid-template-columns: 2fr 1fr;
+            
+    }
+    .headerGrillaM{
+        
+        display: grid;
+        grid-template-areas: 
+            "nav nuevo";
+            grid-template-rows: 400px;
+            grid-template-columns: 2fr 1fr;
+            
+    }
+    .nuevo{
+        background: url(../img/fashion.jpg) center center; 
+        background-size: cover;
+    }
+    .nav{
+        background: url(../img/imgFondo.jpg) center center; 
+        background-size: cover;
+        grid-area: nav;
+    }
+    .destacados{
+        grid-area: destacados;
+        background: url(../img/imgDestacado.jpg) center center; 
+        background-size: cover;
+    
+    }
+    .footerGrids{
+        display: grid;
+        grid-template-areas: 
+            "redesF tips";
+            grid-template-rows: 400px;
+            grid-template-columns: 2fr 3fr;
+    }
+}
+*{
+    font-family: 'Roboto';
+    padding: 0%;
+    margin: 0%;
+}
+.destacados{
+    text-align: center;
+    text-decoration: solid;
+    font-size: larger;
+}
+ul{
+    background-color: rgba(0, 0, 0, 0.116);
+} 
+li{
+    margin: 10px;
+    font-size: large;
+}
+a{
+    color: aliceblue;
+}
+figcaption {
+    text-align: center;
+}
+.tituloHombre{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: solid;
+    font-size: larger;
+}
