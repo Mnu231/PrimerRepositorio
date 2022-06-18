@@ -20,7 +20,6 @@
     .containerSuperiores{
         display: flex;
         flex-direction: column;
-        background-color: blueviolet;
     }
     .flexSection{
         display: flex;
@@ -35,7 +34,7 @@
             "main" 
             "footer"
         ;
-        grid-template-rows: 400px 2fr 400px;
+        grid-template-rows: 350px 2fr 400px;
         grid-template-columns: 100%;
        grid-row-gap: 10px;
         
@@ -50,20 +49,9 @@
         grid-template-columns: 100%;
             
     }
-    .grillaBody{
-    
-        display: grid;
-        grid-template-areas:    
-            "header"
-            "main"
-            "footer" 
-        ;
-        grid-template-rows: 350px 2fr 400px;
-        grid-template-columns:  100%;
-        
-    }
     header{
-        grid-area: header;  
+        grid-area: header;
+  
     }
     .headerGrilla{
     
@@ -132,6 +120,18 @@
         background: url(../img/fashion.jpg) center center; 
         background-size: cover;
     }
+    .imagenAnimada{
+        width: 100%;
+        transition: all 300ms;
+        position: relative;
+    }
+    .imagenAnimada:hover{
+        transform: scale(1.15);
+    }
+    .imglogo{
+        width: 80%;
+    }
+    
 } 
 @media (min-width: 768px){
     .containerMujeres{
@@ -209,8 +209,24 @@
         background: url(../img/fashion.jpg) center center; 
         background-size: cover;
     }
+    .imagenAnimada{
+        width: 100%;
+        transition: all 300ms;
+        position: relative;
+    }
+    .imagenAnimada:hover{
+        transform: scale(1.15);
+    }
 }
 @media  (min-width: 1024px){
+    .conteinerHombre{
+        display: flex;
+        flex-direction: row;
+    }
+    .conteinerNinos{
+        display: flex;
+        flex-direction: row;
+    }
     .containerMujeres{
         display: flex;
         flex-direction: row;
@@ -224,6 +240,8 @@
         flex-direction: row;
     }
     .flexSection{
+        padding-top: 50px;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -281,6 +299,14 @@
             grid-template-rows: 400px;
             grid-template-columns: 2fr 3fr;
     }
+    .imagenAnimada{
+        width: 100%;
+        transition: all 300ms;
+        position: relative;
+    }
+    .imagenAnimada:hover{
+        transform: scale(1.15);
+    }
 }
 *{
     font-family: 'Roboto';
@@ -305,9 +331,8 @@ a{
 figcaption {
     text-align: center;
 }
-.tituloHombre{
-    padding: 10px;
-    margin: 10px;
-    text-decoration: solid;
-    font-size: larger;
+
+.titulos{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
