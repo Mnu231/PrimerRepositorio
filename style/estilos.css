@@ -9,6 +9,11 @@
     background-size: cover;
 }
 @media (min-width:480px)  {
+    .nav{        
+        background: url(../img/imgFondo.jpg) center center; 
+        background-size: cover;
+        grid-area: nav;
+    }
     .containerMujeres{
         display: flex;
         flex-direction: column;
@@ -34,7 +39,6 @@
             "main" 
             "footer"
         ;
-        grid-template-rows: 350px 2fr 400px;
         grid-template-columns: 100%;
        grid-row-gap: 10px;
         
@@ -63,10 +67,9 @@
             grid-template-columns: 100%;
     
     }
-    .nav{
+    .background{
         background: url(../img/imgFondo.jpg) center center; 
         background-size: cover;
-        grid-area: nav;
     }
     ul{
         display: flex;
@@ -134,6 +137,12 @@
     
 } 
 @media (min-width: 768px){
+    .nav{        
+        background: url(../img/imgFondo.jpg) center center; 
+        background-size: cover;
+        grid-area: nav;
+
+    }
     .containerMujeres{
         display: flex;
         flex-direction: column;
@@ -157,7 +166,7 @@
             "main" 
             "footer"
         ;
-        grid-template-rows: 400px 2fr 400px;
+        justify-items: stretch;
         grid-template-columns: 100%;
        grid-row-gap: 10px;
         
@@ -180,19 +189,6 @@
             grid-template-columns: 2fr 1fr;
             
     }
-    .grillaBody{
-    
-        display: grid;
-        grid-template-areas:      
-            "header" 
-            "main"
-            "footer" 
-        ;
-        grid-template-rows: 350px 2fr 400px;
-        grid-template-columns: 100%;
-       grid-row-gap: 10px;
-        
-    }  
     main{
         padding: 10px;
         grid-area: main; 
@@ -259,14 +255,12 @@
        grid-row-gap: 10px;
         
     }
-    .headerGrilla{
-        
+    .headerGrid{
         display: grid;
         grid-template-areas: 
             "nav destacados";
             grid-template-rows: 400px;
-            grid-template-columns: 2fr 1fr;
-            
+            grid-template-columns: 2fr 700px;
     }
     .headerGrillaM{
         
@@ -274,17 +268,18 @@
         grid-template-areas: 
             "nav nuevo";
             grid-template-rows: 400px;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 400px ;
             
     }
     .nuevo{
         background: url(../img/fashion.jpg) center center; 
         background-size: cover;
     }
-    .nav{
+    .nav{        
         background: url(../img/imgFondo.jpg) center center; 
         background-size: cover;
         grid-area: nav;
+
     }
     .destacados{
         grid-area: destacados;
@@ -318,13 +313,7 @@
     text-decoration: solid;
     font-size: larger;
 }
-ul{
-    background-color: rgba(0, 0, 0, 0.116);
-} 
-li{
-    margin: 10px;
-    font-size: large;
-}
+
 a{
     color: aliceblue;
 }
@@ -335,4 +324,16 @@ figcaption {
 .titulos{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.texto{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-large;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
 }
