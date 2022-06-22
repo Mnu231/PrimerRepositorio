@@ -302,6 +302,14 @@
     .imagenAnimada:hover{
         transform: scale(1.15);
     }
+    
+}
+.imagenAnimada{
+    margin: 50px;
+}
+.containerMujeres{
+    display: flex;
+    flex-direction: row;
 }
 *{
     font-family: 'Roboto';
